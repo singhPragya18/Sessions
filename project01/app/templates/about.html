@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        color: black;
+        font-weight: 800;
+        height: 50px;
+        /* background-color: rgb(33, 44, 44); */
+    }
+    .bg{
+        background-image: url('https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&w=600');
+        background-size: cover;        
+    }
+    h2{
+        margin-top: 50px;
+    }
+    .head{
+        font-size: 70px;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    .content{
+        width:1000px;
+        height: 420px;
+        margin-top: 50px;
+        margin-left: 250px;
+        font-weight: 700;
+        border: 2px solid black;
+    }
+</style>
+</head>
+<body class="bg">
+    <center><h1>Welcome,{{data | default:'Guest'}}</h1></center>
+<center><i class="head">Our Vision</i></center>
+<center class="content"><h2>"We aim to provide wholesome and delicious food at the convenience of our customer.
+   <br>Our workers maintain proper hygiene keeping in mind the health of the customers. 
+   <br>From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food,
+   <br>and millions of restaurant photos and reviews from users just like you, to find your next great meal.
+   You an order food from your favorite restaurants and track the delievery,we always try
+   <br>to deliever the food within the given time period.You can also come to see the hygiene at our place.We feel blessed to 
+   serve you helthy food."</h2>
+   <br>
+   <br>
+   <br>
+    <i style="font-size: 60px;" class="fa fa-instagram"></i><i style="font-size: 60px;margin-left: 10px;" class="fa fa-twitter"></i><i style="font-size: 60px;margin-left: 10px;" class="fa fa-facebook"></i></center>
+   
+    {% endblock %}

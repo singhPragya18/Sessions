@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('https://images.pexels.com/photos/4109132/pexels-photo-4109132.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #333;;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #333;;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(75, 5, 17);
+}
+
+</style>
+<div>
+<body>
+    <center><h1 style="font-size: 40px;">Welcome,{{data | default:'Guest'}}</h1></center>
+    <div style="margin-left: 470px;" class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Reach out to us for any inquiries or feedback</p>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+</div>
+{% endblock %}

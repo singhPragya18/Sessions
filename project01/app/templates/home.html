@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    body{
+        background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:700px;
+        width:1500px;
+    }
+    .btn{
+        color:aliceblue;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 15px 15px 15x black;
+    }
+    .btn:hover{
+        color:#000000;
+        transition: 0.3s;
+    }
+    .landing{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    h1:hover{
+        background-color: #333;
+        width:700px;
+        box-shadow: 15px 15px 15px black;
+        border-radius: 15px;
+        color: aliceblue;
+        transition: 1s;
+    }
+</style>
+<center><h1 style="font-size: 50px;font-weight: bold;">Welcome,{{data | default:'Guest'}}</h1></center>
+<div class="landing">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div>
+      <!-- <b style="font-size: 60px;margin-left: 30px;text-decoration: double;text-decoration: underline;">Let's Become Chatore...</b>  -->
+      <br><a href="{% url 'services' %}"><button style="padding: 20px;margin-top: 100px;margin-left: 590px;width: 300px;font-size: 40px;background-color:  #333;;" type="button" class="btn" >Get started</button></a>
+      <h1 style="margin-top: 130px;margin-left: 450px;"><i>&nbsp;One can not <br>"sleep well","Think well" or<br> "Work well" if one have not Dined well.</i></h1>
+        
+       <!-- <img style="margin-left: 150px;margin-top: 20px;border-radius: 50%;border: 4px solid black;" height="350px" width="350px" src="https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img style="margin-left: 50px;border-radius: 50%;border: 4px solid black;" height="250px" width="250px" src="https://media.istockphoto.com/id/1366953086/photo/korean-dishes.jpg?s=2048x2048&w=is&k=20&c=Ly8WQMuUTUTcudBvue5q3MXqzrqTMqCqyDCu8kJLjHw=">
+        <br><img style="margin-left: 400px;border-radius: 50%;border: 4px solid black;" height="250px" width="250px" src="https://media.istockphoto.com/id/1208954729/photo/image-of-bowl-of-spicy-kung-pao-chicken-with-mixed-vegetables-including-spring-onions.jpg?s=2048x2048&w=is&k=20&c=6EvC0Q0XfLPw8cw3g4-pQdicI3jXQ71BxSsVF5mQRQ0=">      
+        <img style="margin-left: 10px;margin-bottom: 00px;border-radius: 50%;border: 4px solid black;" height="200px" width="200px" src="https://media.istockphoto.com/id/1329630778/photo/asian-cuisine.jpg?b=1&s=612x612&w=0&k=20&c=cQ_uCLtLv6RBm_441wX6bHcrhrq8sEfw1bIUhFQd9-8=">  -->
+      </div>
+     
+</div>
+{% endblock %}

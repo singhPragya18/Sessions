@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color:  rgb(192, 178, 178);
+        }
+        .book{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            color:  rgb(31, 45, 45);
+            margin-left: 100px;
+        }
+        .book img{
+            height: 250px;
+            width: 350px;
+            border: 4px solid  rgb(31, 45, 45);
+            margin-top: 20px;
+        }
+        button{
+            background-color:  rgb(31, 45, 45);
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
+        h3{
+            margin-left: 100px;
+        }
+    </style>
+</style>
+<div>
+    <center><h1>Welcome,{{data | default:'Guest' }}</h1></center>
+    <div class="book">
+        <div>
+        <img src="https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <h3>Cheese Pasta - Rs.160/-</h3>
+        <a href="/registration"><button style="padding: 10px;cursor:pointer;box-shadow: 15px 15px 15px black;font-size: 20px;border-radius: 5px;" type="button" class="btn btn-light">BUY NOW</button></a>
+    </div>
+        <div>
+            <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg">
+            <h3>Pizza - Rs.250/-</h3>
+            <a href="/registration"><button style="padding: 10px;cursor:pointer;box-shadow: 15px 15px 15px black;font-size: 20px;border-radius: 5px;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>Dosa - Rs.100/-</h3>
+            <a href="/registration"><button style="padding: 10px;cursor:pointer;box-shadow: 15px 15px 15px black;font-size: 20px;border-radius: 5px;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/5946982/pexels-photo-5946982.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>Cold Coffee - Rs.150/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;cursor:pointer;box-shadow: 15px 15px 15px black;border-radius: 5px;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/16360176/pexels-photo-16360176/free-photo-of-ice-cream-shake.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>oreo shake - Rs.210/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;border-radius: 5px;cursor:pointer;box-shadow: 15px 15px 15px black;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>Burger - Rs.190/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;border-radius: 5px;cursor:pointer;box-shadow: 15px 15px 15px black;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/2347383/pexels-photo-2347383.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>Noodles - Rs.150/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;border-radius: 5px;cursor:pointer;box-shadow: 15px 15px 15px black;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/166676/pexels-photo-166676.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <h3>Cheese Sandwixh - Rs.70/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;border-radius: 5px;cursor:pointer;box-shadow: 15px 15px 15px black;" type="button" class="btn btn-light">BUY NOW</button></a>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg">
+            <h3>Pizza - Rs.250/-</h3>
+            <a href="/registration"><button style="padding: 10px;font-size: 20px;border-radius: 5px;cursor:pointer;box-shadow: 15px 15px 15px black;" type="button" class="btn btn-light">BUY NOW</button></a>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
